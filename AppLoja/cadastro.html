@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">z
+        <title> Formulário - Cadastro </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <style>
+                
+            div{
+                margin: 15px;
+        
+            }
+            body{
+                background-image:url(Imagem/download.jpg);
+                font-language-override: normal
+            }
+            .margem-botao{
+                margin: 5px 590px;
+                
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <H1> Cadastre-se</H1>
+        <div>
+        <form action="http://10.10.132.9:5000/cliente" method="post">
+            <div class="form-group">
+            <label for="nome"> <b>Digite seu nome completo:</b> </label>
+            <input type="text" name="nome" placeholder="Nome completo" class="form-control" required/>
+            </div>
+            
+            <div class="forma-group">
+            <label for="email"> <b>Digite o seu Email:</b></label>
+            <input type="email" name="email" placeholder="digite seu email" class="form-control"required/>
+            </div>
+            
+            <div class="form-row">
+                <div class="col-md-3 md-3">
+            <label for="idade"> <b>Digite a sua idade:</b></label>
+            <input type="number" name="idade" placeholder="digite sua idade" class="form-control"required/>
+            </div>
+            
+            <div class="form-group">
+            <label for="melhor forma de pagamento"> <b>Informe a melhor Forma de pagamento:</b></label>
+            <input type="date" name="melhor forma de pagamento" class="form-control"required/> 
+            </div>
+            
+            <div class="form-group">
+                <div class= "col-md-2">
+            <label for="diga seu genêro" > <b>Informe seu genêro sexual:</b></label>
+            <div><input type="radio" name="diga seu genêro" value="masculino"/> Masculino</div>
+            <div><input type="radio" name="diga seu genêro" value="feminino"/> Feminino</div>
+            </div>
+        
+            <div class="form-group">
+            <label><b>Como conheceu nosso site?</b> </label>
+            <div><input type="checkbox" name="Google" value="Google"/> Google </div>
+            <div><input type="checkbox" name="Amigos" value="Amigos"/> Amigos </div>
+            <div><input type="checkbox" name="Revistas e Jornais" value="Revistas e Jornais"/> Revistas e Jornais </div>
+            </div>
+            
+            <div class="form-group">
+            <label> <b>Qual é a sua cor favorita?</b></label>
+                <div class="form-group-width">
+                    <input type="color" name="cor"/> 
+                </div>
+            </div>
+            
+                
+            <div class="margem-botao" align="center">
+                <input type="submit" value="Enviar Dados" class="btn btn-danger btn-block"/>
+            </div>
+   
+        </form>
+        </div>
+    
+    </body>
+</html>
